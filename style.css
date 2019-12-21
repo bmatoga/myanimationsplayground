@@ -1,0 +1,60 @@
+body {
+    background: #333;
+  }
+
+  .logo {
+  /*   color: #f2f2f2; */
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2rem;
+  }
+
+  .logo p {
+    display: inline-block;
+    margin: 0;
+    backface-visibility: hidden;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  }
+
+  .logo-left {
+    animation: slideIn .6s ease-out 1s;
+    color: #55c57a;
+  }
+
+  .logo .logo-right {
+    color: #557ac5;
+    margin-left: -10px;
+    animation: rotate 1.2s 1.6s;
+  }
+
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+
+    80% {
+      transform: translateX(5px);
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
